@@ -3,45 +3,185 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lya Chinas</title>
+    <title>Lya Chiñas</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <div class="profile-container">
-                <div class="profile-picture">
-                    <img src="images/portrait.png">
-                </div>
-                <div class="profile-info">
-                    <h1>Lya Chiñas</h1>
-                    <p class="subtitle">PhD Student | Machine Learning for Metabolic Engineering</p>
-                    
-                    <div class="social-links">
-                        <a href="mailto:lya.chinas@mail.utoronto.ca" class="social-button">
-                            <i class="fas fa-envelope"></i> email
-                        </a>
-                        <a href="https://linkedin.com/in/lya-chinas-serrano" class="social-button">
-                            <i class="fab fa-linkedin-in"></i> LinkedIn
-                        </a>
-                        <a href="https://github.com/lyach" class="social-button">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                        <a href="resume.pdf" class="social-button">
-                            <i class="fas fa-file-alt"></i> Resume
-                        </a>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Lya Chiñas</h1>
+            <p class="hero-subtitle">PhD Student | Machine Learning for Metabolic Engineering</p>
+            
+            <div class="social-links">
+                <a href="mailto:lya.chinas@mail.utoronto.ca" class="social-button">
+                    <i class="fas fa-envelope"></i>
+                    <span>Email</span>
+                </a>
+                <a href="https://linkedin.com/in/lya-chinas-serrano" class="social-button" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/lyach" class="social-button" target="_blank">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://scholar.google.com/citations?hl=en&user=YPf4mekAAAAJ" class="social-button" target="_blank">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Google Scholar</span>
+                </a>
+                <a href="resume.pdf" class="social-button" target="_blank">
+                    <i class="fas fa-file-alt"></i>
+                    <span>Resume</span>
+                </a>
+            </div>
+        </div>
+        <div class="hero-background"></div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Bio Section -->
+        <section id="bio" class="section section-alt">
+            <div class="container">
+                <div class="bio-container">
+                    <div class="bio-image-wrapper">
+                        <img src="images/portrait.png" alt="Lya Chiñas" class="bio-image">
+                    </div>
+                    <div class="bio-content">
+                        <p>I'm a 2<sup>nd</sup> year PhD student in the <a href="https://lmse.utoronto.ca/" target="_blank">Laboratory for Metabolic 
+                            Systems Engineering</a> at the University of Toronto.</p>            
+                        <p>My research merges machine learning with metabolic engineering to develop computational models that predict cellular behavior. 
+                            Ultimately, the goal of these models is to accelerate biotechnology innovation, from biomanufacturing to drug discovery.</p>
+                        <p>Through past and current projects, I've polished my skills in machine learning and mechanistic modeling. 
+                            In addition to research, I enjoy sharing this knowledge as a Teaching Assistant for the Graduate Course <a href="https://github.com/AI4ChemS/CHE1147" 
+                            target="_blank">CHE1147 (Chemical Data Science and Engineering)</a>.</p>
+                        <p>When taking a break from the code, I recharge through fitness. I’ve been passionate about weightlifting for over five years, and recently picked up interval running.</p>
                     </div>
                 </div>
             </div>
-        </header>
-        
-        <section class="intro">
-            <p>I'm a 1<sup>st</sup> year PhD student in the <a href="https://lmse.utoronto.ca/" target="_blank">Laboratory for Metabolic Systems Engineering</a> at the University of Toronto.</p>            
-            <p>My research merges machine learning with biotechnology to develop novel tools for metabolic engineering. Their potential applications range from enhancing biomanufacturing to speeding up drug discovery.</p>
-            <p>Through my past and current projects, I’ve gained hands-on experience with neural networks and optimization algorithms. In addition to research, I enjoy sharing this knowledge as a Teaching Assistant for an <a href="https://engineering.calendar.utoronto.ca/course/che222h1" target="_blank">engineering course</a> on process modeling.</p>
-            <p>Outside of academia, I’m passionate about fitness and weightlifting—a discipline I’ve pursued for over four years!</p>
-    </div>
+        </section>
+
+        <!-- Publications Section -->
+        <section id="publications" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <i class="fas fa-book section-icon"></i>
+                    <h2>Publications</h2>
+                </div>
+                <div class="publications-grid">
+                    <div class="publication-card">
+                        <div class="publication-year">2025</div>
+                        <h3 class="publication-title">Bridging Sequence and Kinetics: Utilizing Multi-scale Representations for Genome-Scale Metabolic Models,</h3>
+                        <h4 class="publication-type">Poster Presentation</h4>
+                        <p class="publication-conference">ICLR 2025: Learning Meaningful Representations of Life Workshop</p>
+                        <div class="publication-links">
+                            <a href="https://openreview.net/forum?id=KLnnAWPF0T" class="publication-link" target="_blank">
+                                <i class="fas fa-file-pdf"></i>
+                                <span>Paper</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="publication-card">
+                        <div class="publication-year">2024</div>
+                        <h3 class="publication-title">Enhancing Compound-Protein Interaction Prediction with Confidence Assessment</h3>
+                        <h4 class="publication-type">Oral Presentation</h4>
+                        <p class="publication-conference">American Institute of Chemical Engineers Annual Meeting (AIChE) 2024</p>
+                        <div class="publication-links">
+                            <a href="https://aiche.confex.com/aiche/2024/prelim.cgi/Paper/688363" class="publication-link" target="_blank">
+                                <i class="fas fa-file-pdf"></i>
+                                <span>Abstract</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="publication-card">
+                        <div class="publication-year">2024</div>
+                        <h3 class="publication-title">kinGEMs: Advancing Enzyme-Constrained Genome-Scale Models with Deep Learning Predicted Kinetic Parameters</h3>
+                        <h4 class="publication-type">Oral Presentation</h4>
+                        <p class="publication-conference">9th Conference on Constraint-Based Reconstruction and Analysis (COBRA)</p>
+                        <div class="publication-links">
+                            <a href="https://www.aiche.org/conferences/conference-on-constraint-based-reconstruction-and-analysis-cobra/2024/technical-program" class="publication-link" target="_blank">
+                                <i class="fas fa-file-pdf"></i>
+                                <span>Abstract</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <i class="fas fa-cogs section-icon"></i>
+                    <h2>Skills</h2>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>Models</h3>
+                        <ul class="skill-list">
+                            <li>Neural Networks</li>
+                            <li>Deep Learning</li>
+                            <li>Constraint-Based Optimization</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Languages</h3>
+                        <ul class="skill-list">
+                            <li>Python</li>
+                            <li>MATLAB</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>Tools</h3>
+                        <ul class="skill-list">
+                            <li>NumPy</li>
+                            <li>Pandas</li>
+                            <li>Git</li>
+                            <li>scikit-learn</li>
+                            <li>PyTorch</li>
+                            <li>LaTeX</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3>Graphic Design</h3>
+                        <ul class="skill-list">
+                            <li>Adobe (Photoshop, Illustrator, Premiere Pro)</li>
+                            <li>Affinity (Photo, Designer, Publisher)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-bottom">
+            <p>&copy; Oct 2025 Lya Chiñas.</p>
+        </div>
+    </footer>
 </body>
 </html>
