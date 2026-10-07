@@ -128,7 +128,7 @@ h1 {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    background: var(--primary-color);
     min-height: 100vh;
     display: flex;
     align-items: center;
