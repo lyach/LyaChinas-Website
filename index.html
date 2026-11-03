@@ -9,112 +9,93 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Hero Section -->
-    <header class="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">Lya Chiñas</h1>
-            <p class="hero-subtitle">PhD @ UofT | AI + Biology
-            
-            <div class="social-links">
-                <a href="mailto:lya.chinas@mail.utoronto.ca" class="social-button">
-                    <i class="fas fa-envelope"></i>
-                    <span>Email</span>
-                </a>
-                <a href="https://linkedin.com/in/lya-chinas-serrano" class="social-button" target="_blank">
-                    <i class="fab fa-linkedin-in"></i>
-                    <span>LinkedIn</span>
-                </a>
-                <a href="https://github.com/lyach" class="social-button" target="_blank">
-                    <i class="fab fa-github"></i>
-                    <span>GitHub</span>
-                </a>
-                <a href="https://scholar.google.com/citations?hl=en&user=YPf4mekAAAAJ" class="social-button" target="_blank">
-                    <i class="fas fa-graduation-cap"></i>
-                    <span>Google Scholar</span>
-                </a>
-                <a href="files/resume.pdf" class="social-button" target="_blank">
+    <div class="layout">
+        <!-- Sidebar (left on desktop, top on mobile) -->
+        <aside class="sidebar">
+            <div class="sidebar-background"></div>
+            <div class="sidebar-content">
+                <img src="images/portrait.png" alt="Lya Chiñas" class="profile-photo">
+                <h1 class="profile-name">Lya Chiñas</h1>
+                <p class="profile-subtitle">PhD @ UofT | AI + Biology</p>
+
+                <div class="social-links">
+                    <a href="mailto:lya.chinas@mail.utoronto.ca" class="social-icon" aria-label="Email" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/lya-chinas-serrano" class="social-icon" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/lyach" class="social-icon" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://scholar.google.com/citations?hl=en&user=YPf4mekAAAAJ" class="social-icon" target="_blank" rel="noopener" aria-label="Google Scholar" title="Google Scholar">
+                        <i class="fas fa-graduation-cap"></i>
+                    </a>
+                </div>
+
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- About Section -->
+            <section id="about" class="section">
+                <div class="bio-content">
+                    <p>I'm a 3<sup>rd</sup> year PhD student in the <a href="https://lmse.utoronto.ca/" target="_blank" rel="noopener">Laboratory for Metabolic
+                        Systems Engineering</a> at the University of Toronto.</p>
+                    <p>I build models that explain cell behavior from genetic information. It's a two-stage process: machine learning predicts properties from DNA and protein sequences, and metabolic models use those predictions 
+                        to simulate how cells grow and respond. The goal is to speed up biotechnology, such as designing microbes that produce fuels, medicines, and materials.</p>
+                    <p>In addition to research, I enjoy sharing this knowledge as a Teaching Assistant for the graduate courses <a href="https://github.com/AI4ChemS/CHE1147"
+                        target="_blank" rel="noopener">CHE1147 Chemical Data Science and Engineering</a> and <a href="https://sgs.calendar.utoronto.ca/course/che1148h"
+                        target="_blank" rel="noopener">CHE118 Artificial Intelligence for Applied Chemistry and Chemical Engineering</a>.</p>
+                    <p>Coding aside, fitness is a big passion of mine! I’ve been weightlifting for over six years, and my latest race was the La Jolla Half Marathon.</p>
+                </div>
+                <a href="files/cv.pdf" class="button" target="_blank" rel="noopener">
                     <i class="fas fa-file-alt"></i>
-                    <span>Resume</span>
+                    <span>CV</span>
                 </a>
-            </div>
-        </div>
-        <div class="hero-background"></div>
-    </header>
+            </section>
 
-    <!-- Main Content -->
-    <main class="main-content">
-        <!-- Bio Section -->
-        <section id="bio" class="section section-alt">
-            <div class="container">
-                <div class="bio-container">
-                    <div class="bio-image-wrapper">
-                        <img src="images/portrait.png" alt="Lya Chiñas" class="bio-image">
-                    </div>
-                    <div class="bio-content">
-                        <p>I'm a 2<sup>nd</sup> year PhD student in the <a href="https://lmse.utoronto.ca/" target="_blank">Laboratory for Metabolic 
-                            Systems Engineering</a> at the University of Toronto.</p>            
-                        <p>My research merges machine learning with metabolic engineering to develop computational models that predict the behavior of microorganisms. 
-                            Ultimately, the goal of these models is to accelerate biotechnology innovation, from biomanufacturing to drug discovery.
-                
-                        <p> In addition to research, I enjoy sharing this knowledge as a Teaching Assistant for the graduate courses <a href="https://github.com/AI4ChemS/CHE1147" 
-                            target="_blank">CHE1147 Chemical Data Science and Engineering</a> and <a href="https://sgs.calendar.utoronto.ca/course/che1148h" 
-                            target="_blank">CHE118 Artificial Intelligence for Applied Chemistry and Chemical Engineering</a>.</p>
-                        <p>Coding aside, fitness is a big passion of mine. I’ve been weightlifting for over six years, and my latest race was the La Jolla Half Marathon.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Publications Section -->
-        <section id="publications" class="section">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Publications</h2>
-                </div>
-                <div class="publications-grid">
-                    <div class="publication-card">
+            <!-- Publications Section -->
+            <section id="publications" class="section">
+                <h2 class="section-title">Publications</h2>
+                <div class="publications-list">
+                    <article class="publication-item">
                         <div class="publication-year">2026</div>
                         <h3 class="publication-title">Machine Learning for Sequence‐to‐Function Approaches</h3>
                         <p class="publication-conference">Machine Learning and Big Data‐enabled Biotechnology</p>
                         <div class="publication-links">
-                            <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/9783527850532.ch4" class="publication-link" target="_blank">
-                                <i class="fas fa-file-pdf"></i>
+                            <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/9783527850532.ch4" class="publication-link" target="_blank" rel="noopener">
+                                <i class="fas fa-book"></i>
                                 <span>Book Chapter</span>
                             </a>
                         </div>
-                    </div>
-                    <div class="publication-card">
+                    </article>
+                    <article class="publication-item">
                         <div class="publication-year">2026</div>
                         <h3 class="publication-title">kinGEMs: A Robust and Scalable Framework for Resource-Constraint Models through Stochastic Tuning of Deep Learning-Predicted Kinetic Parameters</h3>
                         <p class="publication-conference">PLOS Computational Biology (In press)</p>
                         <div class="publication-links">
-                            <a href="https://www.biorxiv.org/content/10.64898/2026.03.14.711833v1" class="publication-link" target="_blank">
+                            <a href="https://www.biorxiv.org/content/10.64898/2026.03.14.711833v2" class="publication-link" target="_blank" rel="noopener">
                                 <i class="fas fa-file-pdf"></i>
                                 <span>Paper</span>
                             </a>
                         </div>
-                    </div>
-                    <div class="publication-card">
+                    </article>
+                    <article class="publication-item">
                         <div class="publication-year">2025</div>
-                        <h3 class="publication-title">Bridging Sequence and Kinetics: Utilizing Multi-scale Representations for Genome-Scale Metabolic Models,</h3>
+                        <h3 class="publication-title">Bridging Sequence and Kinetics: Utilizing Multi-scale Representations for Genome-Scale Metabolic Models</h3>
                         <p class="publication-conference">ICLR 2025: Learning Meaningful Representations of Life Workshop</p>
                         <div class="publication-links">
-                            <a href="https://openreview.net/forum?id=KLnnAWPF0T" class="publication-link" target="_blank">
+                            <a href="https://openreview.net/forum?id=KLnnAWPF0T" class="publication-link" target="_blank" rel="noopener">
                                 <i class="fas fa-file-pdf"></i>
                                 <span>Paper</span>
                             </a>
                         </div>
-                    </div>
+                    </article>
                 </div>
-            </div>
-        </section>
-
-       
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-bottom">
-            <p>&copy; 2026, Lya Chiñas.</p>
-        </div>
-    </footer>
+            </section>
+        </main>
+    </div>
 </body>
 </html>
